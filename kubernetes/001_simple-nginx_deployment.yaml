@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+4apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-nginx
@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: simple-nginx
-  replicas: 1
+  replicas: 4
   template:
     metadata:
       labels:
