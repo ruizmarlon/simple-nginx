@@ -6,15 +6,7 @@ spec:
   selector:
     matchLabels:
       app: simple-nginx
-<<<<<<< HEAD
-<<<<<<< HEAD
-  replicas: 4
-=======
-  replicas: 3
->>>>>>> Increasing replicas of Nginx to 3.
-=======
   replicas: 5
->>>>>>> Change replica count to 5.
   template:
     metadata:
       labels:
