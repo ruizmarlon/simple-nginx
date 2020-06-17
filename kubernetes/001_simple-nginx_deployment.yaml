@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: simple-nginx
-  replicas: 7
+  replicas: 3
   template:
     metadata:
       labels:
