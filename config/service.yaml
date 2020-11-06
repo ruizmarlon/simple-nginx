@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+spec:
+  # Use a different type if LoadBalancer is not supported on your k8s environment
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 3000
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: nginx
